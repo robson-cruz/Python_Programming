@@ -63,6 +63,5 @@ print()
 # get the two smallest numbers in column 'n'
 smallest_num = df.nsmallest(2, 'n')
 print('Smallest Numbers in the data frame')
-print(smallest_num)
+print(smallest_num, end='')
 
-#
