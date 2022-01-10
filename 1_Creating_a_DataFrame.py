@@ -18,3 +18,6 @@ print('Number of Columns:', n_col)
 # Get the number of rows
 n_rows = df.shape[0]
 print('Number of Rows:', n_rows)
+
+# save as .csv
+df.to_csv("df.csv", index=False)
