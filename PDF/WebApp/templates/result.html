@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Extraction Result</title>
+</head>
+<body>
+    <h1>Resultado da Extração de Imagens</h1>
+    {% if images_paths %}
+        <p>Imagens extraídas do PDF:</p>
+        <ul>
+            {% for image_path in images_paths %}
+                <li><a href="{{ image_path }}" target="_blank">{{ image_path }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Nenhuma imagem extraída.</p>
+    {% endif %}
+</body>
+</html>
